@@ -15,7 +15,7 @@ end
 #Decide if valid move.
 def valid_move?(board, input)
   input_to_index(input)
-  if input < 9 && input >= 0
+  if input.between(0,8)
     if board[input] == "X" || board[input] == "O"
       return false
     else
