@@ -9,7 +9,7 @@ def display_board(board)
 end
 #convert position to an index
 def input_to_index(input)
-  input.to_i
+  input = input.to_i
   input = input - 1
 end
 
