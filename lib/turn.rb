@@ -6,8 +6,8 @@ end
 
 def valid_move?(board, input)
   if input < 9 && input >= 0
-    if board[input] != " "
-      return false
+    if board[input] == " "
+      return true
     end
   else
     return false
