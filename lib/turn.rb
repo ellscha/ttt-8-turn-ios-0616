@@ -4,7 +4,7 @@ end
 def input_to_index(input)
 end
 
-def valid_move?(input, board)
+def valid_move?(board, input)
   if input < 9 && input >= 0
     return true
   else
