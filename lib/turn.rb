@@ -14,7 +14,6 @@ end
 
 #Decide if valid move.
 def valid_move?(board, input)
-  input_to_index(input)
   if input.between?(0,8)
     if valid_pos?(board, input)
       return true
