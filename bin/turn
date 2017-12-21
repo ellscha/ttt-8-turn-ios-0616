@@ -4,13 +4,13 @@ require_relative '../lib/turn.rb'
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 puts "Welcome to Tic Tac Toe!"
-puts "Enter a position between 1 and 9"
+puts "Please enter 1-9: "
 input = gets.strip
 
 index = input_to_index(input)
 
 until valid_move(board, index)
-  puts "Enter a position between 1 and 9"
+  puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
 end
