@@ -9,7 +9,7 @@ def display_board(board)
 end
 #convert position to an index
 def input_to_index(input)
-  input = input.to_i - 1
+  return input.to_i - 1
 end
 
 #Decide if valid move.
@@ -32,7 +32,7 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   index = gets.strip
-  input_to_index(index)
+  input = input_to_index(index)
   if valid_move?(board, index)
     move(board, index, value)
   else
