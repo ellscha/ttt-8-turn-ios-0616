@@ -16,7 +16,7 @@ end
 def valid_move?(board, input)
   input_to_index(input)
   if input.between?(0,8)
-    
+
   else
     return false
   end
@@ -40,3 +40,9 @@ end
 
 
 def valid_pos?(board, input)
+  if board[input] == "X" || board[input] == "O"
+    return false
+  else
+    return true
+  end
+end
