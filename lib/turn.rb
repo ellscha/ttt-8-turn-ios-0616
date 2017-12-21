@@ -26,6 +26,8 @@ end
 def move(index, board, value="X")
   if valid_move?(board, index)
     board[index] = value
+  else
+    break
   end
 end
 #turn will ask the user for an input in the bin file
