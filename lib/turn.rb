@@ -19,6 +19,7 @@ def valid_move?(board, input)
     if valid_pos?(board, input)
   else
     return false
+    end
   end
 end
 
