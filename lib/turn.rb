@@ -20,6 +20,7 @@ def turn(input, board, value="X")
   if valid_move?(input)
     move(input, board, value)
   else
+    return
   end
 
 end
