@@ -27,13 +27,13 @@ def valid_move?(board, input)
 end
 
 def move(board, index, value="X")
-  if valid_move?(board, index)
     board[index] = value
-  else
-    return
-  end
 end
 #turn will ask the user for an input in the bin file
 def turn(board)
   puts "Please enter 1-9:"
+  index = gets.strip
+  input_to_index(index)
+  move(board, index, value)
+
 end
