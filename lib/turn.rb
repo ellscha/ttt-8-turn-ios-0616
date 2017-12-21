@@ -31,7 +31,7 @@ def move(index, board, value="X")
   end
 end
 #turn will ask the user for an input in the bin file
-def turn(input, board, value="X")
+def turn(board)
   input_to_index(input)
   if valid_move?(input)
     move(input, board, value)
