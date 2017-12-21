@@ -4,7 +4,12 @@ end
 def input_to_index(input)
 end
 
-def valid_move?(input)
+def valid_move?(input, board)
+  if input < 9 && input >= 0
+    return true
+  else
+    return false
+  end
 end
 
 def move(index, board, value="X")
@@ -15,7 +20,7 @@ def turn(input, board, value="X")
   if valid_move?(input)
     move(input, board, value)
   else
-    
+
   end
-  
+
 end
