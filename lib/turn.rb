@@ -26,7 +26,7 @@ def valid_move?(board, input)
   end
 end
 
-def move(index, board, value="X")
+def move(board, index, value="X")
   if valid_move?(board, index)
     board[index] = value
   else
