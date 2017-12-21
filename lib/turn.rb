@@ -35,11 +35,5 @@ def move(index, board, value="X")
 end
 #turn will ask the user for an input in the bin file
 def turn(board)
-  input_to_index(input)
-  if valid_move?(input)
-    move(input, board, value)
-  else
-    return
-  end
-
+  puts "Please enter 1-9:"
 end
