@@ -1,3 +1,10 @@
+def display_board(board)
+end
+
+def valid_move?(input, board)
+end
+
+
 def turn(index, board, value="X")
 
 end
